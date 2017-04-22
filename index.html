@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+   <style>
+   * {
+      margin: 0;
+      padding: 0;
+   }
+
+   body {
+      background: whitesmoke;
+   }
+   .icons {
+      text-align: center;
+      margin: 50px auto;
+      font-family: 'Roboto', Arial, sans-serif;
+      font-size: 50px;
+   }
+   .ps { color: #20c3ff;}
+   .ai { color: #ee860b;}
+   .id { color: #e965ff;}
+   .dw { color: #04cd00;}
+   .lr { color: #51a7c7;}
+   .red {color: red}
+   .container {
+      width: 500px;
+      height: 100px;
+      margin: 250px auto;
+   }
+   .box {
+      float: left;
+      margin: 20px;
+      box-shadow: 0px 0px 30px black;
+      height: 50px;
+      width: 50px;
+      transition: .5s ease-in-out;
+   }
+   .box:hover {
+      box-shadow: 0px 0px 50px black;
+      cursor: pointer;
+   }
+   .photoshop {
+      background: #0f333e;
+      border: 2px solid #20c3ff;
+      color: #20c3ff;
+      font-family: 'Roboto';
+      font-weight: bold;
+      font-size: 35px;
+      text-align: center;
+      line-height: 50px;
+   }
+   .illustrator {
+      background: #362008;
+      border: 2px solid #ee860b;
+      color: #ee860b;
+      font-family: 'Roboto';
+      font-weight: bold;
+      font-size: 35px;
+      text-align: center;
+      line-height: 50px;
+   }
+   .indesign {
+      background: #2d0519;
+      border: 2px solid #e965ff;
+      color: #e965ff;
+      font-family: 'Roboto';
+      font-weight: bold;
+      font-size: 35px;
+      text-align: center;
+      line-height: 50px;
+   }
+   .dreamweaver {
+      background: #0b1d03;
+      border: 2px solid #04cd00;
+      color: #04cd00;
+      font-family: 'Roboto';
+      font-weight: normal;
+      font-size: 35px;
+      text-align: center;
+      line-height: 50px;
+   }
+   .lightroom {
+      height: 50px;
+      width: 50px;
+      background: #132d36;
+      border: 2px solid #51a7c7;
+      color: #51a7c7;
+      font-family: 'Roboto';
+      font-weight: bold;
+      font-size: 35px;
+      text-align: center;
+      line-height: 50px;
+   }
+
+   </style>
+</head>
+<body>
+
+   <h1 class="icons"><span class="ps">A</span><span class="ai">d</span><span class="id">o</span><span class="dw">b</span><span class="lr">e</span> <span class="red">Icons</span></h1>
+   <div class="container">
+      <div class="photoshop box">Ps</div>
+      <div class="illustrator box">Ai</div>
+      <div class="indesign box">Id</div>
+      <div class="dreamweaver box">Dw</div>
+      <div class="lightroom box">Lr</div>
+
+   </div>
+
+   <script src="node_modules/jquery/dist/jquery.min.js"></script>
+   <script>
+      $(function() {
+         $('body').hide();
+         $('body').fadeIn('slow');
+      })
+
+   </script>
+</body>
+</html>
